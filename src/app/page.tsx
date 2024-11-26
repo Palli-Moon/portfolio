@@ -14,6 +14,22 @@ export default function Home() {
         </div>
       </div> */}
       <Hero />
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
+      <p>blablabla</p>
     </>
   );
 }
