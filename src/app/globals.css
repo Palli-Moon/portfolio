@@ -2,22 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --gray: rgb(30 41 59);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --gray: rgb(148 163 184);
-  }
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.moon-gray {
-  color: var(--gray);
 }
 
 @layer base {
