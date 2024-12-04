@@ -53,7 +53,7 @@ export default function Skills() {
   return (
     <div className='pb-8'>
       <h1 className='text-3xl'>Skills</h1>
-      <SkillList title='Legend' skills={legend} />
+      <SkillList title='Proficiency' skills={legend} />
       <SkillList title='Programming' skills={programming} />
       <SkillList title='Libraries & Frameworks' skills={frameWorks} />
       <SkillList title='Tools & Other Skills' skills={tools} />
