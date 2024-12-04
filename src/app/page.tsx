@@ -5,13 +5,13 @@ import Skills from '@/components/ui/skills';
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Navbar />
       <Hero />
       <div className='md:container md:mx-auto p-8 text-justify'>
         <Bio />
         <Skills />
       </div>
-    </>
+    </main>
   );
 }
