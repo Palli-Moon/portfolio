@@ -1,9 +1,10 @@
 export default function Bio() {
   return (
-    <div className='md:container md:mx-auto p-8 text-justify'>
+    <div className='pb-8'>
+      <h1 className='text-3xl'>Bio</h1>
       <p className='my-4'>
         Gunnar Páll studied computer science at Reykjavík University and graduated with a Bachelor of Science degree in the spring of 2016. He has more than 9
-        years’ experience in software development. Mainly specializing in C# .NET Framework and JavaScript (Typescript) libraries and frameworks like Node,
+        years’ experience in software development. Mainly specializing in C# .NET Framework and JavaScript (TypeScript) libraries and frameworks like Node,
         React and Next. but has also worked with SQL, Business Central AL, and a plethora of other languages at his most recent job at Klappir Grænar Lausnir,
         while at RU or on his own. He loves to learn new things and is constantly sharpening his skills in his free time.
       </p>
