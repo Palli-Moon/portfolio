@@ -1,6 +1,6 @@
 import { Level, Skill } from '@/types';
 
-export default function SkillTitle({ skills }: { skills: Skill[] }) {
+export default function SkillBadge({ skills }: { skills: Skill[] }) {
   return (
     <>
       {skills.map((s) => (

@@ -1,6 +1,6 @@
 import Hero from '@/components/ui/hero';
 import Bio from '@/components/ui/bio';
-import Skills from '@/components/ui/skills';
+import Skills from '@/components/ui/skills/skills';
 
 export default function Home() {
   return (
