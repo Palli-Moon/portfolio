@@ -83,24 +83,48 @@ export const languages: Skill[] = [
 
 export const experience: CardData[] = [
   {
-    title: 'LS',
-    startDate: new Date('2016-10-1'),
-    endDate: new Date('2016-10-1'),
+    name: 'Marel',
+    title: 'Contract Developer',
+    startDate: new Date('2016-1'),
+    endDate: new Date('2016-09'),
     image: 'asdf',
-    description: <p>asdf</p>,
+    link: 'asdf',
+    description: (
+      <>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta mollis sodales. Duis lobortis sodales turpis et porta. Vivamus aliquam eget
+        quam nec auctor. Sed a mi sit amet sapien feugiat vestibulum sit amet a lorem.
+      </>
+    ),
+    descriptionLong: <p>Marel</p>,
   },
   {
-    title: 'LS',
-    startDate: new Date('2016-10-1'),
-    endDate: new Date('2016-10-1'),
+    name: 'LS Retail',
+    title: 'Software Developer',
+    startDate: new Date('2016-10'),
+    endDate: new Date('2023-07'),
     image: 'asdf',
-    description: <p>asdf</p>,
+    link: 'asdf',
+    description: (
+      <>
+        Donec elementum suscipit mattis. Nullam aliquet tristique mi, at laoreet est pulvinar eget. Quisque interdum, tellus nec sagittis feugiat, ligula nisl
+        venenatis urna, sit amet venenatis odio eros sed nibh.{' '}
+      </>
+    ),
+    descriptionLong: <p>LS</p>,
   },
   {
-    title: 'LS',
-    startDate: new Date('2016-10-1'),
-    endDate: new Date('2016-10-1'),
+    name: 'Klappir Grænar Lausnir',
+    title: 'Lead Backend Developer',
+    startDate: new Date('2023-08'),
+    endDate: new Date('2024-11'),
     image: 'asdf',
-    description: <p>asdf</p>,
+    link: 'asdf',
+    description: (
+      <>
+        Vivamus tempor est sit amet commodo placerat. Integer in ex sed ipsum tristique blandit in et est. Fusce congue orci vitae dictum porta. Donec rhoncus
+        eleifend scelerisque. Nam efficitur purus sed neque pulvinar, vel laoreet elit dignissim.
+      </>
+    ),
+    descriptionLong: <p>Klappir</p>,
   },
 ];

@@ -1,21 +1,20 @@
-import Image from 'next/image';
 import dateFormat from 'dateformat';
-import palli from '@/../public/palli.jpg';
 import { CardData } from '@/types';
 
-export default function Card({ title, startDate, endDate, image, description }: CardData) {
+export default function Card({ name, title, startDate, endDate, description }: CardData) {
   return (
-    <div className='card card-compact bg-base-300 w-72 shadow-xl '>
-      <figure className='relative'>
-        <Image src={palli} alt='Palli' className='w-fill max-h-20 object-cover' />
-      </figure>
+    <div className='card card-compact bg-base-300 w-fill shadow-xl '>
       <div className='card-body'>
-        <h2 className='card-title'>{title}</h2>
-        {dateFormat(startDate, 'mmm yyyy')}-{dateFormat(endDate, 'mmm yyyy')}
-        {image}
-        {description}
+        <h2 className='card-title text-primary bg-neutral-900 rounded-xl p-2 justify-center'>{name}</h2>
+        <div className='flex justify-between'>
+          <p className='text-secondary'>{title}</p>
+          <p className='text-slate-400 text-right'>
+            {dateFormat(startDate, 'mmm yyyy')} - {dateFormat(endDate, 'mmm yyyy')}
+          </p>
+        </div>
+        <p>{description}</p>
         <div className='card-actions justify-end'>
-          <button className='btn btn-primary'>Buy Now</button>
+          <button className='btn btn-sm btn-secondary'>More info</button>
         </div>
       </div>
     </div>

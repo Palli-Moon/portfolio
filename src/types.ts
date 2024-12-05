@@ -16,9 +16,12 @@ export enum Level {
 }
 
 export type CardData = {
-  title: string;
+  name: string;
+  title?: string;
   startDate: Date;
   endDate: Date;
   image: string;
+  link: string;
   description: JSX.Element;
+  descriptionLong: JSX.Element;
 };

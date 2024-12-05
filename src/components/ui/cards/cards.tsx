@@ -3,10 +3,13 @@ import Card from './card';
 
 export default function Cards({ cardData }: { cardData: CardData[] }) {
   return (
-    <div className='flex gap-4 flex-wrap'>
+    <div className='flex gap-4 flex-col lg:flex-row'>
       {cardData.map((d, i) => {
-        console.log(d);
-        return <Card key={i} {...d} />;
+        return (
+          <div key={i} className='basis-1/3'>
+            <Card {...d} />
+          </div>
+        );
       })}
     </div>
   );
