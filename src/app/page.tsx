@@ -1,7 +1,7 @@
 import Hero from '@/components/ui/hero';
 // import Bio from '@/components/ui/bio';
 // import Skills from '@/components/ui/skills/skills';
-import Cards from '@/components/ui/cards';
+import Cards from '@/components/ui/cards/cards';
 
 export default function Home() {
   return (
