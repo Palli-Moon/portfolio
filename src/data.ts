@@ -1,14 +1,5 @@
 import { Skill, Level } from './types';
 
-export const bio = `Gunnar Páll aka "Palli Moon" studied computer science at Reykjavík University and graduated with a Bachelor of Science degree in the spring of 2016. He
-                    has more than 9 years’ experience in software development. Mainly specializing in C# .NET Framework and JavaScript (TypeScript) libraries and frameworks
-                    like Node, React and Next. but has also worked with SQL, Business Central AL, and a plethora of other languages at his most recent job at Klappir Grænar
-                    Lausnir, while at RU or on his own. He loves to learn new things and is constantly sharpening his skills in his free time.`;
-
-export const bioContinued = `Outside of software development his interests are mostly music related. He plays drums in an active band. He is also self-taught on many other
-                            instruments and has a Bachelor of Arts (Honours) degree in audio engineering from SAE Institute in London. He also enjoys video games, traveling and
-                            spending times with friends and family.`;
-
 export const legend: Skill[] = [
   { title: 'Excellent', level: Level.Excellent },
   { title: 'Good', level: Level.Good },
