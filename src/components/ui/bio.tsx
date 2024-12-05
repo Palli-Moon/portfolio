@@ -8,11 +8,17 @@ export default function Bio() {
         React and Next. but has also worked with SQL, Business Central AL, and a plethora of other languages at his most recent job at Klappir Grænar Lausnir,
         while at RU or on his own. He loves to learn new things and is constantly sharpening his skills in his free time.
       </p>
-      <p className='my-4'>
-        Outside of software development his interests are mostly music related. He plays drums in an active band. He is also self-taught on many other
-        instruments and has a Bachelor of Arts (Honours) degree in audio engineering from SAE Institute in London. He also enjoys video games, traveling and
-        spending times with friends and family.
-      </p>
+
+      <div tabIndex={0} className='collapse bg-base-200'>
+        <div className='collapse-title text-m font-medium'>Click for more info and interests...</div>
+        <div className='collapse-content'>
+          <p className='my-4'>
+            Outside of software development his interests are mostly music related. He plays drums in an active band. He is also self-taught on many other
+            instruments and has a Bachelor of Arts (Honours) degree in audio engineering from SAE Institute in London. He also enjoys video games, traveling and
+            spending times with friends and family.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
