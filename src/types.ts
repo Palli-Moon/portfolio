@@ -1,11 +1,11 @@
 export type Skill = {
   title: string;
-  level: LevelStyle;
+  level: Level;
 };
 
-export enum LevelStyle {
-  Excellent,
-  Good,
-  Decent,
-  Limited,
+export enum Level {
+  Excellent = 3,
+  Good = 2,
+  Decent = 1,
+  Limited = 0,
 }

@@ -1,4 +1,5 @@
-import { LevelStyle, Skill } from '@/types';
+import { Skill } from '@/types';
+import SkillTitle from './skillTitle';
 
 export default function SkillList(props: { title: string; skills: Skill[] }) {
   const { title, skills } = props;
@@ -6,19 +7,7 @@ export default function SkillList(props: { title: string; skills: Skill[] }) {
   return (
     <div className='my-8'>
       <div className='mr-2'>{title}:</div>
-      {skills.map((s) => {
-        return (
-          <div
-            key={s.title}
-            className={`mr-2 badge 
-                ${s.level === LevelStyle.Excellent && 'badge-primary'}
-                ${s.level === LevelStyle.Good && 'badge-secondary'}
-                ${s.level === LevelStyle.Decent && 'badge-neutral'}`}
-          >
-            {s.title}
-          </div>
-        );
-      })}
+      <SkillTitle skills={skills} />
     </div>
   );
 }

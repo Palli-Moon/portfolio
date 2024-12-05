@@ -1,5 +1,6 @@
-import { Skill, LevelStyle as Level } from '@/types';
+import { Skill, Level } from '@/types';
 import SkillList from './skillList';
+import SkillTitle from './skillTitle';
 
 export default function Skills() {
   const legend: Skill[] = [
@@ -11,7 +12,6 @@ export default function Skills() {
   const programming: Skill[] = [
     { title: 'C#', level: Level.Excellent },
     { title: 'JavaScript/TypeScript', level: Level.Excellent },
-    { title: 'SQL', level: Level.Excellent },
     { title: 'C++', level: Level.Good },
     { title: 'Java', level: Level.Good },
     { title: 'Python', level: Level.Good },
@@ -27,6 +27,7 @@ export default function Skills() {
     { title: 'ReactJS', level: Level.Excellent },
     { title: 'Next.js', level: Level.Excellent },
     { title: 'Node.js', level: Level.Excellent },
+    { title: 'SQL', level: Level.Excellent },
     { title: 'Vue.js', level: Level.Good },
     { title: 'Express.js/GraphQL', level: Level.Good },
     { title: 'MongoDB', level: Level.Good },
@@ -36,9 +37,12 @@ export default function Skills() {
     { title: 'Git', level: Level.Excellent },
     { title: 'Agile/Scrum', level: Level.Excellent },
     { title: 'VS Code', level: Level.Excellent },
+    { title: 'Vercel', level: Level.Excellent },
+    { title: 'Docker', level: Level.Good },
     { title: 'Digital Ocean', level: Level.Good },
     { title: 'MS Excel', level: Level.Good },
-    { title: 'Continuous Integration/Delivery', level: Level.Good },
+    { title: 'CI/CD', level: Level.Good },
+    { title: 'UI/UX', level: Level.Good },
     { title: 'Nx (monorepo)', level: Level.Decent },
     { title: 'AWS', level: Level.Decent },
   ];
@@ -48,12 +52,16 @@ export default function Skills() {
     { title: 'English', level: Level.Excellent },
     { title: 'Swedish', level: Level.Good },
     { title: 'Danish', level: Level.Good },
+    { title: 'Spanish', level: Level.Decent },
   ];
 
   return (
     <div className='pb-8'>
       <h1 className='text-3xl'>Skills</h1>
-      <SkillList title='Proficiency' skills={legend} />
+      <div className='my-4 '>
+        <p className='mr-2 inline'>Skills are roughly in descending order of proficiency. The colours represent the following level of expertise:</p>
+        <SkillTitle skills={legend} />
+      </div>
       <SkillList title='Programming' skills={programming} />
       <SkillList title='Libraries & Frameworks' skills={frameWorks} />
       <SkillList title='Tools & Other Skills' skills={tools} />
