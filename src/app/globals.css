@@ -1,4 +1,15 @@
 @tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-3xl text-primary font-bold;
+  }
+
+  b {
+    @apply text-secondary;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
