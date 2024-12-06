@@ -92,7 +92,7 @@ export const experience: CardData[] = [
     languages: [{ title: 'C#' }, { title: 'AngularJS' }, { title: 'MS Azure' }],
     description: (
       <p className='my-4'>
-        Final project at <b>Reykjavík University</b> was in collaboration with <b>Marel</b>, focusing on the design and development of software for Marel’s
+        Final project at <b>Reykjavík University</b> was in collaboration with <b>Marel</b>, focusing on the design and development of software for Marel&apos;s{' '}
         <b>Innova systems</b>. The software collects and analyzes data, primarily error logs, and presents the results through an intuitive web-based interface.
         The system is hosted on the <b>Microsoft Azure</b> cloud platform. The work involved front-end and back-end development, along with dev-ops tasks,
         documentation, and more. Following graduation, development on the project continued through September 2016.
@@ -132,17 +132,18 @@ export const experience: CardData[] = [
   },
   {
     name: 'Klappir Grænar Lausnir',
-    title: 'Lead Backend Developer',
+    title: 'Tech Lead',
     startDate: new Date('2023-08'),
     endDate: new Date('2024-11'),
     image: 'asdf',
     link: 'asdf',
+    languages: [{ title: 'NodeJS' }, { title: 'SQL' }, { title: 'GraphQL' }],
     description: (
-      <>
-        Vivamus tempor est sit amet commodo placerat. Integer in ex sed ipsum tristique blandit in et est. Fusce congue orci vitae dictum porta. Donec rhoncus
-        eleifend scelerisque. Nam efficitur purus sed neque pulvinar, vel laoreet elit dignissim.
-      </>
+      <p className='my-4'>
+        Responsible for upgrading and maintaining the backend of <b>Klappir&apos;s</b> environmental platform. Played a key role in the hiring process and
+        onboarding new developers. Encouraged the team to adopt <b>Agile</b> and <b>Scrum</b> methodologies and contributed significantly to{' '}
+        <b>architectural design decisions</b>.
+      </p>
     ),
-    descriptionLong: <p>Klappir</p>,
   },
 ];
