@@ -3,8 +3,9 @@ import { CardData } from '@/types';
 import SkillBadge from '@/components/ui/skills/skillBadge';
 import CardModal from './cardModal';
 
-export default function Card({ cardData, identifier }: { cardData: CardData; identifier: number }) {
+export default function Card({ cardData, identifier, onlyYear }: { cardData: CardData; identifier: number; onlyYear?: boolean }) {
   const { name, title, startDate, endDate, languages, description, descriptionLong } = cardData;
+  const format = onlyYear ? 'yyyy' : 'mmm yyyy';
 
   return (
     <>
@@ -14,7 +15,7 @@ export default function Card({ cardData, identifier }: { cardData: CardData; ide
           <div className='flex justify-between'>
             <p className='text-secondary'>{title}</p>
             <p className='text-slate-400 text-right'>
-              {dateFormat(startDate, 'mmm yyyy')} - {dateFormat(endDate, 'mmm yyyy')}
+              {dateFormat(startDate, format)} - {dateFormat(endDate, format)}
             </p>
           </div>
           <div>{description}</div>

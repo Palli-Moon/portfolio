@@ -79,7 +79,7 @@ export const languages: Skill[] = [
   { title: 'Spanish', level: Level.Decent },
 ];
 
-// Experience
+// Experience and Education
 
 export const experience: CardData[] = [
   {
@@ -139,6 +139,42 @@ export const experience: CardData[] = [
         Responsible for upgrading and maintaining the backend of <b>Klappir&apos;s</b> environmental platform. Played a key role in the hiring process and
         onboarding new developers. Encouraged the team to adopt <b>Agile</b> and <b>Scrum</b> methodologies and contributed significantly to{' '}
         <b>architectural design decisions</b>.
+      </p>
+    ),
+  },
+];
+
+export const education: CardData[] = [
+  {
+    name: 'Borgarholtsskóli',
+    title: 'Media, Stúdentspróf',
+    startDate: new Date('2007'),
+    endDate: new Date('2009'),
+    description: (
+      <p className='my-4'>
+        <b>Stúdentspróf</b>, the Icelandic equivalent to A-levels majoring in <b>Media</b>.
+      </p>
+    ),
+  },
+  {
+    name: 'SAE Institute',
+    title: 'Audio Engineering, B.A.',
+    startDate: new Date('2023-08'),
+    endDate: new Date('2024-11'),
+    description: (
+      <p className='my-4'>
+        <b>Bachelor of Arts (Hons)</b> in Audio Engineering from SAE Institute in <b>London</b>
+      </p>
+    ),
+  },
+  {
+    name: 'Reykjavík University',
+    title: 'Computer Science, B.Sc.',
+    startDate: new Date('2023-08'),
+    endDate: new Date('2024-11'),
+    description: (
+      <p className='my-4'>
+        <b>Bachelor of Science</b> degree in Computer Science from Reykjavík University with focus on <b>Game Development</b> and <b>Web Services</b>.
       </p>
     ),
   },
