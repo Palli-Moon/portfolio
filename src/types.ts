@@ -5,14 +5,14 @@ export type Bio = {
 
 export type Skill = {
   title: string;
-  level: Level;
+  level?: Level;
 };
 
 export enum Level {
   Excellent = 3,
   Good = 2,
   Decent = 1,
-  Limited = 0,
+  Neutral = 0,
 }
 
 export type CardData = {
@@ -22,6 +22,7 @@ export type CardData = {
   endDate: Date;
   image: string;
   link: string;
+  languages?: Skill[];
   description: JSX.Element;
-  descriptionLong: JSX.Element;
+  descriptionLong?: JSX.Element;
 };

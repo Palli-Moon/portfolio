@@ -89,13 +89,15 @@ export const experience: CardData[] = [
     endDate: new Date('2016-09'),
     image: 'asdf',
     link: 'asdf',
+    languages: [{ title: 'C#' }, { title: 'AngularJS' }, { title: 'MS Azure' }],
     description: (
-      <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta mollis sodales. Duis lobortis sodales turpis et porta. Vivamus aliquam eget
-        quam nec auctor. Sed a mi sit amet sapien feugiat vestibulum sit amet a lorem.
-      </>
+      <p className='my-4'>
+        Final project at <b>Reykjavík University</b> was in collaboration with <b>Marel</b>, focusing on the design and development of software for Marel’s
+        <b>Innova systems</b>. The software collects and analyzes data, primarily error logs, and presents the results through an intuitive web-based interface.
+        The system is hosted on the <b>Microsoft Azure</b> cloud platform. The work involved front-end and back-end development, along with dev-ops tasks,
+        documentation, and more. Following graduation, development on the project continued through September 2016.
+      </p>
     ),
-    descriptionLong: <p>Marel</p>,
   },
   {
     name: 'LS Retail',
@@ -104,13 +106,29 @@ export const experience: CardData[] = [
     endDate: new Date('2023-07'),
     image: 'asdf',
     link: 'asdf',
+    languages: [{ title: 'C#' }, { title: 'SignalR' }, { title: 'BC AL' }, { title: 'TS' }],
     description: (
+      <p className='my-4'>
+        Designed and developed a service to manage retail hardware devices and facilitate communication with the <b>POS</b> system. Also created clients in{' '}
+        <b>TypeScript</b> and <b>.NET</b> for integration with the service, including backend development in <b>Business Central</b> using <b>AL</b> and{' '}
+        <b>C/AL</b> and a frontend using <b>ReactJS</b>. The solution is fully unit-tested, customizable, and packaged as an installer.
+      </p>
+    ),
+    descriptionLong: (
       <>
-        Donec elementum suscipit mattis. Nullam aliquet tristique mi, at laoreet est pulvinar eget. Quisque interdum, tellus nec sagittis feugiat, ligula nisl
-        venenatis urna, sit amet venenatis odio eros sed nibh.{' '}
+        <p className='my-4'>
+          Solely responsible for the end-to-end design and development of a service that manages retail hardware devices and facilitates communication with the
+          POS (Point of Sale) system. The hardware includes OPOS devices (e.g., receipt printers, scanners, scales), A4 printers, EFT (Electronic Funds
+          Transfer) terminals, and forecourt devices. The service leverages SignalR and WebAPI for seamless communication with the POS and includes a
+          configuration web application built with ReactJS. The solution is fully unit-tested, supports custom device implementations, and can simulate various
+          hardware devices. It also features robust test tools and is packaged for deployment as an installer.
+        </p>
+        <p className='my-4'>
+          He was also responsible for developing the clients that interact with the service, implemented in JavaScript (TypeScript) and .NET. These clients were
+          integrated into the Business Central backend, requiring the development of AL and C/AL code as part of the process.
+        </p>
       </>
     ),
-    descriptionLong: <p>LS</p>,
   },
   {
     name: 'Klappir Grænar Lausnir',
