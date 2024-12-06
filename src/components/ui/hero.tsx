@@ -6,9 +6,10 @@ export default function Hero() {
       <div className='hero-content flex-col lg:flex-row gap-10'>
         <Image src='/palli.jpg' className='max-w-sm rounded-lg shadow-2xl' priority alt='A picture of Palli' width={150} height={150} />
         <div className='text-center lg:text-left'>
-          <h1 className='text-5xl'>Gunnar Páll Gunnarsson</h1>
+          <h1 className='text-5xl pb-4'>Gunnar Páll Gunnarsson</h1>
           <p className='text-muted-foreground text-secondary font-[family-name:var(--font-geist-mono)]'>
-            Software Developer, Audio Engineer, Musician, Lover...
+            Software Developer, Audio Engineer, <br className='inline md:hidden' />
+            Musician, Lover...
           </p>
         </div>
       </div>
