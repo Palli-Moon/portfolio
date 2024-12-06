@@ -152,7 +152,7 @@ export const education: CardData[] = [
     endDate: new Date('2009'),
     description: (
       <p className='my-4'>
-        <b>Stúdentspróf</b>, the Icelandic equivalent to A-levels majoring in <b>Media</b>.
+        <b>Stúdentspróf</b>, the Icelandic equivalent to A-levels, majoring in <b>Media</b>.
       </p>
     ),
   },
@@ -163,7 +163,7 @@ export const education: CardData[] = [
     endDate: new Date('2024-11'),
     description: (
       <p className='my-4'>
-        <b>Bachelor of Arts (Hons)</b> in Audio Engineering from SAE Institute in <b>London</b>
+        <b>Bachelor of Arts (Hons)</b> degree in Audio Engineering from SAE Institute in <b>London</b>
       </p>
     ),
   },
