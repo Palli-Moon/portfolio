@@ -87,8 +87,6 @@ export const experience: CardData[] = [
     title: 'Contract Developer',
     startDate: new Date('2016-1'),
     endDate: new Date('2016-09'),
-    image: 'asdf',
-    link: 'asdf',
     languages: [{ title: 'C#' }, { title: 'AngularJS' }, { title: 'MS Azure' }],
     description: (
       <p className='my-4'>
@@ -104,8 +102,6 @@ export const experience: CardData[] = [
     title: 'Software Developer',
     startDate: new Date('2016-10'),
     endDate: new Date('2023-07'),
-    image: 'asdf',
-    link: 'asdf',
     languages: [{ title: 'C#' }, { title: 'SignalR' }, { title: 'BC AL' }, { title: 'TS' }],
     description: (
       <p className='my-4'>
@@ -117,15 +113,17 @@ export const experience: CardData[] = [
     descriptionLong: (
       <>
         <p className='my-4'>
-          Solely responsible for the end-to-end design and development of a service that manages retail hardware devices and facilitates communication with the
-          POS (Point of Sale) system. The hardware includes OPOS devices (e.g., receipt printers, scanners, scales), A4 printers, EFT (Electronic Funds
-          Transfer) terminals, and forecourt devices. The service leverages SignalR and WebAPI for seamless communication with the POS and includes a
-          configuration web application built with ReactJS. The solution is fully unit-tested, supports custom device implementations, and can simulate various
-          hardware devices. It also features robust test tools and is packaged for deployment as an installer.
+          Solely responsible for the end-to-end design and development of a <b>service</b> that manages <b>retail hardware</b> devices and facilitates
+          communication with the POS (Point of Sale) system. The hardware includes <b>OPOS</b> devices (e.g., receipt printers, scanners, scales), A4 printers,
+          EFT (Electronic Funds Transfer) terminals, and forecourt devices. The service leverages <b>SignalR</b> and <b>WebAPI</b> for seamless communication
+          with the POS and includes a configuration web application built with <b>ReactJS</b>. The solution is fully <b>unit-tested</b>, supports{' '}
+          <b>custom device implementations</b>, and can <b>simulate</b> various hardware devices. It also features robust <b>test tools</b> and is packaged for{' '}
+          <b>deployment</b> as an <b>installer</b>.
         </p>
         <p className='my-4'>
-          He was also responsible for developing the clients that interact with the service, implemented in JavaScript (TypeScript) and .NET. These clients were
-          integrated into the Business Central backend, requiring the development of AL and C/AL code as part of the process.
+          He was also responsible for developing the <b>clients</b> that interact with the service, implemented in <b>JavaScript (TypeScript)</b> and{' '}
+          <b>.NET</b>. These clients were integrated into the <b>Business Central</b> backend, requiring the development of <b>AL</b> and <b>C/AL</b> code as
+          part of the process.
         </p>
       </>
     ),
@@ -135,8 +133,6 @@ export const experience: CardData[] = [
     title: 'Tech Lead',
     startDate: new Date('2023-08'),
     endDate: new Date('2024-11'),
-    image: 'asdf',
-    link: 'asdf',
     languages: [{ title: 'NodeJS' }, { title: 'SQL' }, { title: 'GraphQL' }],
     description: (
       <p className='my-4'>

@@ -20,8 +20,6 @@ export type CardData = {
   title?: string;
   startDate: Date;
   endDate: Date;
-  image: string;
-  link: string;
   languages?: Skill[];
   description: JSX.Element;
   descriptionLong?: JSX.Element;

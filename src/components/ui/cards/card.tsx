@@ -1,8 +1,11 @@
 import dateFormat from 'dateformat';
 import { CardData } from '@/types';
 import SkillBadge from '@/components/ui/skills/skillBadge';
+import CardModal from './cardModal';
 
-export default function Card({ name, title, startDate, endDate, languages, description, descriptionLong }: CardData) {
+export default function Card({ cardData, identifier }: { cardData: CardData; identifier: number }) {
+  const { name, title, startDate, endDate, languages, description, descriptionLong } = cardData;
+
   return (
     <>
       <div className='card card-compact bg-base-300 w-fill shadow-xl '>
@@ -14,10 +17,10 @@ export default function Card({ name, title, startDate, endDate, languages, descr
               {dateFormat(startDate, 'mmm yyyy')} - {dateFormat(endDate, 'mmm yyyy')}
             </p>
           </div>
-          <div className='text-left'>{description}</div>
+          <div>{description}</div>
           <div className='card-actions justify-between'>
             <div className='my-auto'>{languages && <SkillBadge skills={languages} />}</div>
-            <div>{descriptionLong && <button className='btn btn-sm btn-ghost'>More info</button>}</div>
+            <div>{descriptionLong && <CardModal cardData={cardData} identifier={identifier} />}</div>
           </div>
         </div>
       </div>
