@@ -1,4 +1,4 @@
-import { Bio, Skill, Level, CardData } from './types';
+import { Bio, Skill, Level, ExpCardData, ProjectCardData } from './types';
 
 // Bio
 
@@ -6,9 +6,9 @@ export const bio: Bio = {
   main: (
     <p className='my-4'>
       <b>Gunnar Páll</b>, also known as <b>Palli Moon</b>, holds a <b>Bachelor of Science</b> degree in Computer Science from <b>Reykjavík University</b>,
-      graduating in the spring of 2016. With over nine years of experience in software development, he specializes in <b>C# .NET Framework</b> and{' '}
-      <b>JavaScript/TypeScript</b> libraries, including <b>Node.js</b>, <b>ReactJS</b>, and <b>Next.js</b>. A lifelong learner, he continually hones his skills
-      and explores new technologies in his free time.
+      graduating in the spring of 2016. With over nine years of experience (and at least twice that as a hobbyist) in software development, he specializes in{' '}
+      <b>C# .NET Framework</b> and <b>JavaScript/TypeScript</b> libraries, including <b>Node.js</b>, <b>ReactJS</b>, and <b>Next.js</b>. A lifelong learner, he
+      continually hones his skills and explores new technologies in his free time.
     </p>
   ),
   extended: [
@@ -25,6 +25,8 @@ export const bio: Bio = {
 };
 
 // Skills
+export const skillText = 'Skills are roughly in descending order of proficiency. The colours represent the following levels of expertise:';
+
 export const legend: Skill[] = [
   { title: 'Excellent', level: Level.Excellent },
   { title: 'Good', level: Level.Good },
@@ -82,7 +84,7 @@ export const languages: Skill[] = [
 
 // Experience and Education
 
-export const experience: CardData[] = [
+export const experience: ExpCardData[] = [
   {
     name: 'Marel',
     title: 'Contract Developer',
@@ -145,7 +147,7 @@ export const experience: CardData[] = [
   },
 ];
 
-export const education: CardData[] = [
+export const education: ExpCardData[] = [
   {
     name: 'Borgarholtsskóli',
     title: 'Media, Stúdentspróf',
@@ -179,4 +181,18 @@ export const education: CardData[] = [
       </p>
     ),
   },
+];
+
+// Projects
+
+export const projectText = (
+  <p>
+    Having played around with software development, Palli has taken part in creating countless presonal project to a varying degree of completeness. Some of
+    them may be found on his <a href='https://github.com/Palli-Moon'>Github Page</a>, while many ofthers are private or were not finished.
+  </p>
+);
+
+export const projects: ProjectCardData[] = [
+  { name: 'This site!', link: 'https://www.pallimoon.com/', ghlink: 'https://github.com/Palli-Moon/portfolio', description: <>This site</> },
+  { name: 'This site!', link: 'https://www.pallimoon.com/', ghlink: 'https://github.com/Palli-Moon/portfolio', description: <>This site</> },
 ];
