@@ -1,10 +1,10 @@
 import { ProjectCardData } from '@/types';
-import { FaEarthAmericas, FaGithub } from 'react-icons/fa6';
+import { FaGithub } from 'react-icons/fa6';
 import Card from './card';
 import SkillBadge from '../skills/skillBadge';
 
 export default function ProjectCard({ data }: { data: ProjectCardData }) {
-  const { name, description, link, ghlink, languages } = data;
+  const { name, description, ghlink, languages } = data;
 
   // Link's currently inactive, since the only project using on is this one, so it really doesn't need one!
   return (
