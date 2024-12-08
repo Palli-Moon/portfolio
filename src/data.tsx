@@ -193,6 +193,31 @@ export const projectText = (
 );
 
 export const projects: ProjectCardData[] = [
-  { name: 'This site!', link: 'https://www.pallimoon.com/', ghlink: 'https://github.com/Palli-Moon/portfolio', description: <>This site</> },
-  { name: 'This site!', link: 'https://www.pallimoon.com/', ghlink: 'https://github.com/Palli-Moon/portfolio', description: <>This site</> },
+  {
+    name: "Palli's Portfolio",
+    link: 'https://www.pallimoon.com/',
+    ghlink: 'https://github.com/Palli-Moon/portfolio',
+    description: (
+      <>
+        This portfolio site — yes, the one you're currently visiting! — is built in <b>NextJS</b> and features a variety of <b>components</b> to showcase
+        versatility. While it currently lacks a <b>backend</b>, it still effectively separates <b>data</b> and <b>UI</b> concerns. Hosted on <b>Vercel</b> and
+        deployed using <b>GitHub Actions</b>, this project is a continuous work in progress. I plan to expand it over time by adding my <b>music</b> and other{' '}
+        <b>content</b> as my career evolves.
+      </>
+    ),
+    languages: [{ title: 'NextJS' }, { title: 'TypeScript' }, { title: 'Vercel' }],
+  },
+  {
+    name: 'Ticketing',
+    ghlink: 'https://github.com/Palli-Moon/ticketing',
+    description: (
+      <>
+        A self-driven project designed to gain hands-on experience with the <b>microservice</b> paradigm. It features a <b>Node.js</b> backend paired with a{' '}
+        <b>ReactJS and Next.js</b> frontend. The architecture incorporates <b>Docker</b> within a <b>Kubernetes cluster</b>, with{' '}
+        <b>NGINX Ingress Controller</b> managing service communication. The application allows users to create event tickets that can be "purchased" using the{' '}
+        <b>Stripe API</b> (in test mode). The project is not currently available online for testing but includes detailed setup steps for deployment.
+      </>
+    ),
+    languages: [{ title: 'Node.js' }, { title: 'ReactJS' }, { title: 'MongoDB' }, { title: 'Microservices' }, { title: 'StripeAPI' }],
+  },
 ];
