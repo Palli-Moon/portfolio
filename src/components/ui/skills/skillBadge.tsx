@@ -6,11 +6,11 @@ export default function SkillBadge({ skills }: { skills: Skill[] }) {
       {skills.map((s) => (
         <div
           key={s.title}
-          className={`mr-2 badge badge-outline
-                ${s.level === Level.Excellent && 'badge-success'}
-                ${s.level === Level.Good && 'badge-warning'}
-                ${s.level === Level.Decent && 'badge-info'}
-                ${s.level || 'badge-ghost'}`}
+          className={`mr-2 badge badge-outline rounded-md
+                ${s.level === Level.Excellent && 'border-green-600'}
+                ${s.level === Level.Good && 'border-yellow-600'}
+                ${s.level === Level.Decent && 'border-orange-600'}
+                ${s.level || 'border-gray-600 '}`}
         >
           {s.title}
         </div>

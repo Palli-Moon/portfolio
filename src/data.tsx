@@ -63,12 +63,13 @@ export const tools: Skill[] = [
   { title: 'VS Code', level: Level.Excellent },
   { title: 'Vercel', level: Level.Excellent },
   { title: 'Docker', level: Level.Good },
+  { title: 'Microservices', level: Level.Good },
   { title: 'Digital Ocean', level: Level.Good },
-  { title: 'MS Excel', level: Level.Good },
   { title: 'CI/CD', level: Level.Good },
   { title: 'UI/UX', level: Level.Good },
   { title: 'Nx (monorepo)', level: Level.Decent },
   { title: 'AWS', level: Level.Decent },
+  { title: 'Azure', level: Level.Decent },
 ];
 
 export const languages: Skill[] = [
