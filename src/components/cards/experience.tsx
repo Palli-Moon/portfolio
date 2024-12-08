@@ -5,9 +5,7 @@ import Content from '../content';
 export default function Experience() {
   return (
     <Content title='Experience'>
-      <div className='my-4'>
-        <Cards cardData={experience} />
-      </div>
+      <Cards cardData={experience} />
     </Content>
   );
 }

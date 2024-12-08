@@ -1,8 +1,9 @@
-import Hero from '@/components/ui/hero';
-import Bio from '@/components/ui/bio';
-import Skills from '@/components/ui/skills/skills';
-import Experience from '@/components/ui/cards/experience';
-import Education from '@/components/ui/cards/education';
+import Hero from '@/components/hero';
+import Bio from '@/components/bio';
+import Skills from '@/components/skills/skills';
+import Experience from '@/components/cards/experience';
+import Education from '@/components/cards/education';
+import Projects from '@/components/projects';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Education />
+        <Projects />
       </div>
     </main>
   );

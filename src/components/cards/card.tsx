@@ -1,6 +1,6 @@
 import dateFormat from 'dateformat';
 import { CardData } from '@/types';
-import SkillBadge from '@/components/ui/skills/skillBadge';
+import SkillBadge from '@/components/skills/skillBadge';
 import CardModal from './cardModal';
 
 export default function Card({ cardData, identifier, onlyYear }: { cardData: CardData; identifier: number; onlyYear?: boolean }) {
