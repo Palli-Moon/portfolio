@@ -1,15 +1,15 @@
 import { bio } from '@/data';
+import Content from './content';
 
 export default function Bio() {
   return (
-    <div className='pb-8'>
-      <h1>Biography</h1>
+    <Content title='Biography'>
       {bio.main}
 
       <div tabIndex={0} className='collapse collapse-arrow bg-neutral-900'>
         <div className='collapse-title text-m font-medium'>Click for more info and interests...</div>
         <div className='collapse-content'>{bio.extended}</div>
       </div>
-    </div>
+    </Content>
   );
 }

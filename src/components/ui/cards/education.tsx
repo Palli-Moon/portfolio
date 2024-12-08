@@ -1,13 +1,13 @@
 import Cards from './cards';
 import { education } from '@/data';
+import Content from '../content';
 
 export default function Education() {
   return (
-    <div className='pb-8'>
-      <h1>Education</h1>
+    <Content title='Education'>
       <div className='my-4'>
         <Cards cardData={education} onlyYear />
       </div>
-    </div>
+    </Content>
   );
 }

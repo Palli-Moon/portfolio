@@ -1,13 +1,13 @@
 import Cards from './cards';
 import { experience } from '@/data';
+import Content from '../content';
 
 export default function Experience() {
   return (
-    <div className='pb-8'>
-      <h1>Experience</h1>
+    <Content title='Experience'>
       <div className='my-4'>
         <Cards cardData={experience} />
       </div>
-    </div>
+    </Content>
   );
 }

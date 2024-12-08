@@ -1,11 +1,11 @@
 import SkillList from './skillList';
 import SkillBadge from './skillBadge';
 import { legend, programming, frameWorks, tools, languages } from '@/data';
+import Content from '../content';
 
 export default function Skills() {
   return (
-    <div className='pb-8'>
-      <h1>Skills</h1>
+    <Content title='Skills'>
       <div className='my-4 '>
         <p className='mr-2 inline'>Skills are roughly in descending order of proficiency. The colours represent the following levels of expertise:</p>
         <SkillBadge skills={legend} />
@@ -14,6 +14,6 @@ export default function Skills() {
       <SkillList title='Libraries & Frameworks' skills={frameWorks} />
       <SkillList title='Tools & Other Skills' skills={tools} />
       <SkillList title='Languages' skills={languages} />
-    </div>
+    </Content>
   );
 }
