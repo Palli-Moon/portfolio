@@ -5,9 +5,7 @@ import Content from '../content';
 export default function Education() {
   return (
     <Content title='Education'>
-      <div className='my-4'>
-        <Cards cardData={education} onlyYear />
-      </div>
+      <Cards cardData={education} onlyYear />
     </Content>
   );
 }

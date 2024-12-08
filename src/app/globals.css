@@ -10,6 +10,10 @@
   b {
     @apply text-secondary;
   }
+
+  a {
+    @apply underline text-secondary hover:text-primary hover:no-underline;
+  }
 }
 
 body {

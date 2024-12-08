@@ -1,12 +1,12 @@
-export type Bio = {
+export interface Bio {
   main: JSX.Element;
   extended: JSX.Element[];
-};
+}
 
-export type Skill = {
+export interface Skill {
   title: string;
   level?: Level;
-};
+}
 
 export enum Level {
   Excellent = 3,
@@ -15,12 +15,20 @@ export enum Level {
   Neutral = 0,
 }
 
-export type CardData = {
+type CardData = {
   name: string;
-  title?: string;
-  startDate: Date;
-  endDate: Date;
   languages?: Skill[];
   description: JSX.Element;
   descriptionLong?: JSX.Element;
 };
+
+export interface ExpCardData extends CardData {
+  title?: string;
+  startDate: Date;
+  endDate: Date;
+}
+
+export interface ProjectCardData extends CardData {
+  link?: string;
+  ghlink: string;
+}
