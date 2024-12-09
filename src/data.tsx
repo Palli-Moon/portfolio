@@ -86,17 +86,16 @@ export const languages: Skill[] = [
 
 export const experience: ExpCardData[] = [
   {
-    name: 'Marel',
-    title: 'Contract Developer',
-    startDate: new Date('2016-1'),
-    endDate: new Date('2016-09'),
-    languages: [{ title: 'C#' }, { title: 'AngularJS' }, { title: 'MS Azure' }],
+    name: 'Klappir Grænar Lausnir',
+    title: 'Tech Lead',
+    startDate: new Date('2023-08'),
+    endDate: new Date('2024-11'),
+    languages: [{ title: 'NodeJS' }, { title: 'SQL' }, { title: 'GraphQL' }],
     description: (
       <p className='my-4'>
-        Final project at <b>Reykjavík University</b> was in collaboration with <b>Marel</b>, focusing on the design and development of software for Marel&apos;s{' '}
-        <b>Innova systems</b>. The software collects and analyzes data, primarily error logs, and presents the results through an intuitive web-based interface.
-        The system is hosted on the <b>Microsoft Azure</b> cloud platform. The work involved front-end and back-end development, along with dev-ops tasks,
-        documentation, and more. Following graduation, development on the project continued through September 2016.
+        Responsible for upgrading and maintaining the backend of <b>Klappir&apos;s</b> environmental platform. Played a key role in the hiring process and
+        onboarding new developers. Encouraged the team to adopt <b>Agile</b> and <b>Scrum</b> methodologies and contributed significantly to{' '}
+        <b>architectural design decisions</b>.
       </p>
     ),
   },
@@ -132,16 +131,17 @@ export const experience: ExpCardData[] = [
     ),
   },
   {
-    name: 'Klappir Grænar Lausnir',
-    title: 'Tech Lead',
-    startDate: new Date('2023-08'),
-    endDate: new Date('2024-11'),
-    languages: [{ title: 'NodeJS' }, { title: 'SQL' }, { title: 'GraphQL' }],
+    name: 'Marel',
+    title: 'Contract Developer',
+    startDate: new Date('2016-1'),
+    endDate: new Date('2016-09'),
+    languages: [{ title: 'C#' }, { title: 'AngularJS' }, { title: 'MS Azure' }],
     description: (
       <p className='my-4'>
-        Responsible for upgrading and maintaining the backend of <b>Klappir&apos;s</b> environmental platform. Played a key role in the hiring process and
-        onboarding new developers. Encouraged the team to adopt <b>Agile</b> and <b>Scrum</b> methodologies and contributed significantly to{' '}
-        <b>architectural design decisions</b>.
+        Final project at <b>Reykjavík University</b> was in collaboration with <b>Marel</b>, focusing on the design and development of software for Marel&apos;s{' '}
+        <b>Innova systems</b>. The software collects and analyzes data, primarily error logs, and presents the results through an intuitive web-based interface.
+        The system is hosted on the <b>Microsoft Azure</b> cloud platform. The work involved front-end and back-end development, along with dev-ops tasks,
+        documentation, and more. Following graduation, development on the project continued through September 2016.
       </p>
     ),
   },
@@ -149,16 +149,17 @@ export const experience: ExpCardData[] = [
 
 export const education: ExpCardData[] = [
   {
-    name: 'Borgarholtsskóli',
-    title: 'Media, Stúdentspróf',
-    startDate: new Date('2007'),
-    endDate: new Date('2009'),
+    name: 'Reykjavík University',
+    title: 'Computer Science, B.Sc.',
+    startDate: new Date('2023-08'),
+    endDate: new Date('2024-11'),
     description: (
       <p className='my-4'>
-        <b>Stúdentspróf</b>, the Icelandic equivalent to A-levels, majoring in <b>Media</b>.
+        <b>Bachelor of Science</b> degree in Computer Science from Reykjavík University with focus on <b>Game Development</b> and <b>Web Services</b>.
       </p>
     ),
   },
+
   {
     name: 'SAE Institute',
     title: 'Audio Engineering, B.A.',
@@ -171,13 +172,13 @@ export const education: ExpCardData[] = [
     ),
   },
   {
-    name: 'Reykjavík University',
-    title: 'Computer Science, B.Sc.',
-    startDate: new Date('2023-08'),
-    endDate: new Date('2024-11'),
+    name: 'Borgarholtsskóli',
+    title: 'Media, Stúdentspróf',
+    startDate: new Date('2007'),
+    endDate: new Date('2009'),
     description: (
       <p className='my-4'>
-        <b>Bachelor of Science</b> degree in Computer Science from Reykjavík University with focus on <b>Game Development</b> and <b>Web Services</b>.
+        <b>Stúdentspróf</b>, the Icelandic equivalent to A-levels, majoring in <b>Media</b>.
       </p>
     ),
   },
@@ -187,8 +188,8 @@ export const education: ExpCardData[] = [
 
 export const projectText = (
   <p>
-    Having played around with software development, Palli has taken part in creating countless presonal project to a varying degree of completeness. Some of
-    them may be found on his <a href='https://github.com/Palli-Moon'>Github Page</a>, while many ofthers are private or were not finished.
+    Palli has explored software development through countless personal projects, each varying in scope and completeness. Some of these projects are showcased on
+    his <a href='https://github.com/Palli-Moon'>GitHub Page</a>, while others remain private or unfinished.
   </p>
 );
 
@@ -200,12 +201,12 @@ export const projects: ProjectCardData[] = [
     description: (
       <>
         This portfolio site — yes, the one you&apos;re currently visiting! — is built in <b>NextJS</b> and features a variety of <b>components</b> to showcase
-        versatility. While it currently lacks a <b>backend</b>, it still effectively separates <b>data</b> and <b>UI</b> concerns. Hosted on <b>Vercel</b> and
-        deployed using <b>GitHub Actions</b>, this project is a continuous work in progress. I plan to expand it over time by adding my <b>music</b> and other{' '}
-        <b>content</b> as my career evolves.
+        versatility. It conporates <b>Daisy UI</b> and <b>Tailwind CSS</b> for styling. While it currently lacks a <b>backend</b>, it still effectively
+        separates <b>data</b> and <b>UI</b> concerns. Hosted on <b>Vercel</b> and deployed using <b>GitHub Actions</b>, this project is a continuous work in
+        progress. I plan to expand it over time by adding my <b>music</b> and other <b>content</b> as my career evolves.
       </>
     ),
-    languages: [{ title: 'NextJS' }, { title: 'TypeScript' }, { title: 'Vercel' }],
+    languages: [{ title: 'NextJS' }, { title: 'TypeScript' }, { title: 'Daisy UI' }, { title: 'Tailwind' }, { title: 'Vercel' }],
   },
   {
     name: 'Ticketing',

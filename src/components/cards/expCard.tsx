@@ -12,7 +12,7 @@ export default function ExpCard({ cardData, identifier, onlyYear }: { cardData: 
     <Card title={name}>
       <div className='flex justify-between'>
         <p className='text-secondary'>{title}</p>
-        <p className='text-slate-400 text-right'>
+        <p className='text-gray-400 text-right'>
           {dateFormat(startDate, format)} - {dateFormat(endDate, format)}
         </p>
       </div>

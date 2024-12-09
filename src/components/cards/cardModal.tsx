@@ -8,7 +8,7 @@ export default function CardModal({ cardData, identifier }: { cardData: ExpCardD
 
   return (
     <div>
-      <button className='btn btn-sm btn-ghost' onClick={() => (document.getElementById(i) as HTMLDialogElement).showModal()}>
+      <button className='btn btn-xs btn-primary' onClick={() => (document.getElementById(i) as HTMLDialogElement).showModal()}>
         Show More
       </button>
       <dialog id={i} className='modal modal-bottom sm:modal-middle'>
