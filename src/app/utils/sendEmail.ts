@@ -1,12 +1,16 @@
+'use server';
+
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export async function sendMail(replyTo: string, text: string) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default function sendMail() {
-  resend.emails.send({
-    from: 'onboarding@resend.dev',
+  const res = await resend.emails.send({
+    from: 'pallimoon.com@pallimoon.com',
+    replyTo,
     to: 'pallimoon@gmail.com',
-    subject: 'Hello World',
-    html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
+    subject: `Contact email from ${replyTo} on pallimoon.com`,
+    text,
   });
+  console.log('🚀 ~ sendMail ~ res:', res);
 }
