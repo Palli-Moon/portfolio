@@ -1,5 +1,5 @@
 import Cards from './cards';
-import { education } from '@/data';
+import { education } from '@/app/utils/data';
 import Content from '../content';
 
 export default function Education() {
