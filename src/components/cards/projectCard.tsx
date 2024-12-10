@@ -1,4 +1,4 @@
-import { ProjectCardData } from '@/types';
+import { ProjectCardData } from '@/app/utils/types';
 import { FaGithub } from 'react-icons/fa6';
 import Card from './card';
 import SkillBadge from '../skills/skillBadge';
