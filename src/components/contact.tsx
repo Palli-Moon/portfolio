@@ -31,7 +31,6 @@ export default function Contact() {
 
     if (email) {
       const res = await sendMail(email, text);
-      console.log('🚀 ~ onSubmit ~ res:', res);
       if (res.error) {
         toast.error('Not able to send request.');
       } else {
@@ -45,7 +44,7 @@ export default function Contact() {
   return (
     <>
       <Content title='Contact'>
-        <p className='my-4'>Send me a message with your email and I will get int touch!</p>
+        <p className='my-4'>Send me a message with your email and I will get in touch!</p>
         <form onSubmit={onSubmit}>
           <textarea className='textarea textarea-primary w-full rounded-lg min-h-32' placeholder='Message' name='text'></textarea>
           <div className='my-3 flex gap-4'>
