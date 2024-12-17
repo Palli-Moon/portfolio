@@ -1,6 +1,6 @@
 import Content from './content';
 import ProjectCard from './cards/projectCard';
-import { projectText, projects } from '@/app/utils/data';
+import { projectText, projects } from '@/utils/data';
 
 export default function Projects() {
   return (

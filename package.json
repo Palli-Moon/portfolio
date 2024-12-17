@@ -11,6 +11,7 @@
   "dependencies": {
     "dateformat": "^5.0.3",
     "next": "15.0.3",
+    "puppeteer": "^23.10.4",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-hot-toast": "^2.4.1",
@@ -28,5 +29,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "type": "module"
 }

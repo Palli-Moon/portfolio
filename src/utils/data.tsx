@@ -1,4 +1,4 @@
-import { Bio, Skill, Level, ExpCardData, ProjectCardData } from '@/app/utils/types';
+import { Bio, Skill, Level, ExpCardData, ProjectCardData } from '@/utils/types';
 
 // Bio
 

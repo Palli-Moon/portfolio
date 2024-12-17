@@ -1,4 +1,4 @@
-import { ExpCardData } from '@/app/utils/types';
+import { ExpCardData } from '@/utils/types';
 import ExpCard from './expCard';
 
 export default function Cards({ cardData, onlyYear }: { cardData: ExpCardData[]; onlyYear?: boolean }) {

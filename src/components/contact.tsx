@@ -2,7 +2,7 @@
 
 import Content from './content';
 import { FaEnvelope } from 'react-icons/fa6';
-import { sendMail } from '@/app/utils/sendEmail';
+import { sendMail } from '@/utils/sendEmail';
 import { FormEvent } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 

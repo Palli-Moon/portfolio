@@ -1,5 +1,5 @@
 import dateFormat from 'dateformat';
-import { ExpCardData } from '@/app/utils/types';
+import { ExpCardData } from '@/utils/types';
 import SkillBadge from '@/components/skills/skillBadge';
 import CardModal from './cardModal';
 import Card from './card';

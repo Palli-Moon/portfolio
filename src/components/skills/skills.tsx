@@ -1,6 +1,6 @@
 import SkillList from './skillList';
 import SkillBadge from './skillBadge';
-import { skillText, legend, programming, frameWorks, tools, languages } from '@/app/utils/data';
+import { skillText, legend, programming, frameWorks, tools, languages } from '@/utils/data';
 import Content from '../content';
 
 export default function Skills() {

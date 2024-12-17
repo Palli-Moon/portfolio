@@ -1,4 +1,4 @@
-import { bio } from '@/app/utils/data';
+import { bio } from '@/utils/data';
 import Content from './content';
 
 export default function Bio() {

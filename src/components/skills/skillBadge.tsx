@@ -1,4 +1,4 @@
-import { Level, Skill } from '@/app/utils/types';
+import { Level, Skill } from '@/utils/types';
 
 export default function SkillBadge({ skills }: { skills: Skill[] }) {
   return (

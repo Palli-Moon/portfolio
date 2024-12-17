@@ -1,6 +1,6 @@
 'use client';
 
-import { ExpCardData } from '@/app/utils/types';
+import { ExpCardData } from '@/utils/types';
 
 export default function CardModal({ cardData, identifier }: { cardData: ExpCardData; identifier: number }) {
   const { name, descriptionLong } = cardData;

@@ -1,4 +1,4 @@
-import { Skill } from '@/app/utils/types';
+import { Skill } from '@/utils/types';
 import SkillBadge from './skillBadge';
 
 export default function SkillList(props: { title: string; skills: Skill[] }) {
