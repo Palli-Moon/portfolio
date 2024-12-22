@@ -46,11 +46,18 @@ export default function Contact() {
       <Content title='Contact'>
         <p className='my-4'>Send me a message with your email and I will get in touch!</p>
         <form onSubmit={onSubmit}>
-          <textarea className='textarea textarea-primary w-full rounded-lg min-h-32 bg-base-300 border-0' placeholder='Message' name='text'></textarea>
+          <textarea
+            className='textarea textarea-primary w-full rounded-lg min-h-32 bg-base-300 border-0'
+            placeholder='Message'
+            name='text'
+            required
+            minLength={20}
+            maxLength={140}
+          ></textarea>
           <div className='my-3 flex gap-4'>
             <label className='input input-bordered input-primary flex items-center gap-2 rounded-lg basis-4/5 bg-base-300 border-0'>
               <FaEnvelope className='text-primary' />
-              <input type='text' className='grow' placeholder='Email' name='email' />
+              <input type='email' className='grow' placeholder='Email' name='email' required minLength={5} />
             </label>
             <button className='btn btn-primary basis-1/5' type='submit'>
               Send
