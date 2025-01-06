@@ -5,7 +5,7 @@ import { Bio, Skill, Level, ExpCardData, ProjectCardData } from '@/app/utils/typ
 export const bio: Bio = {
   main: (
     <p className='my-4'>
-      <b>Gunnar Páll</b>, also known as <b>Palli Moon</b>, holds a <b>Bachelor of Science</b> degree in Computer Science from <b>Reykjavík University</b>,
+      <b>Páll Máni</b>, also known as <b>Palli Moon</b>, holds a <b>Bachelor of Science</b> degree in Computer Science from <b>Reykjavík University</b>,
       graduating in the spring of 2016. With over nine years of experience (and at least twice that as a hobbyist) in software development, he specializes in{' '}
       <b>C# .NET Framework</b> and <b>JavaScript/TypeScript</b> libraries, including <b>Node.js</b>, <b>ReactJS</b>, and <b>Next.js</b>. A lifelong learner, he
       continually hones his skills and explores new technologies in his free time.
@@ -151,8 +151,8 @@ export const education: ExpCardData[] = [
   {
     name: 'Reykjavík University',
     title: 'Computer Science, B.Sc.',
-    startDate: new Date('2023-08'),
-    endDate: new Date('2024-11'),
+    startDate: new Date('2016'),
+    endDate: new Date('2013'),
     description: (
       <p className='my-4'>
         <b>Bachelor of Science</b> degree in Computer Science from Reykjavík University with focus on <b>Game Development</b> and <b>Web Services</b>.
@@ -163,8 +163,8 @@ export const education: ExpCardData[] = [
   {
     name: 'SAE Institute',
     title: 'Audio Engineering, B.A.',
-    startDate: new Date('2023-08'),
-    endDate: new Date('2024-11'),
+    startDate: new Date('2010'),
+    endDate: new Date('2012'),
     description: (
       <p className='my-4'>
         <b>Bachelor of Arts (Hons)</b> degree in Audio Engineering from SAE Institute in <b>London</b>
