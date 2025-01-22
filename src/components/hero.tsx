@@ -9,7 +9,7 @@ export default function Hero() {
           <h1 className='text-5xl pb-4'>Páll Máni Gunnarsson</h1>
           <p className='text-muted-foreground text-secondary font-[family-name:var(--font-geist-mono)]'>
             Software Developer, Audio Engineer, <br className='inline md:hidden' />
-            Musician, Lover...
+            Musician
           </p>
         </div>
       </div>
