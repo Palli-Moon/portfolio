@@ -25,7 +25,7 @@ type CardData = {
 export interface ExpCardData extends CardData {
   title?: string;
   startDate: Date;
-  endDate: Date;
+  endDate?: Date;
 }
 
 export interface ProjectCardData extends CardData {

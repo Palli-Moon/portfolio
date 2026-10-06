@@ -86,6 +86,14 @@ export const languages: Skill[] = [
 
 export const experience: ExpCardData[] = [
   {
+    name: 'M7',
+    title: 'Software Specialist',
+    startDate: new Date('2025-02'),
+    endDate: undefined,
+    languages: [{ title: '.NET Framework' }, { title: 'MS AX POS' }],
+    description: <p className='my-4'>I &apos;m there now.</p>,
+  },
+  {
     name: 'Klappir Grænar Lausnir',
     title: 'Tech Lead',
     startDate: new Date('2023-08'),

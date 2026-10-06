@@ -13,7 +13,7 @@ export default function ExpCard({ cardData, identifier, onlyYear }: { cardData: 
       <div className='flex justify-between'>
         <p className='text-secondary'>{title}</p>
         <p className='text-gray-400 text-right'>
-          {dateFormat(startDate, format)} - {dateFormat(endDate, format)}
+          {dateFormat(startDate, format)} - {endDate ? dateFormat(endDate, format) : 'Present'}
         </p>
       </div>
       <div>{description}</div>
