@@ -1,8 +1,10 @@
 import Cards from './cards';
-import { education } from '@/app/utils/data';
+import { getExperience } from '@/lib/content';
 import Content from '../content';
 
-export default function Education() {
+export default async function Education() {
+  const education = await getExperience('EDUCATION');
+
   return (
     <Content title='Education'>
       <Cards cardData={education} onlyYear />

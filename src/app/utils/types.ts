@@ -1,8 +1,3 @@
-export interface Bio {
-  main: JSX.Element;
-  extended: JSX.Element[];
-}
-
 export interface Skill {
   title: string;
   level?: Level;
@@ -18,8 +13,8 @@ export enum Level {
 type CardData = {
   name: string;
   languages?: Skill[];
-  description: JSX.Element;
-  descriptionLong?: JSX.Element;
+  description: string; // Markdown
+  descriptionLong?: string; // Markdown
 };
 
 export interface ExpCardData extends CardData {

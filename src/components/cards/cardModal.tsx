@@ -1,9 +1,7 @@
 'use client';
 
-import { ExpCardData } from '@/app/utils/types';
-
-export default function CardModal({ cardData, identifier }: { cardData: ExpCardData; identifier: number }) {
-  const { name, descriptionLong } = cardData;
+// Markdown is rendered on the server and passed in as children, keeping react-markdown out of the client bundle.
+export default function CardModal({ name, identifier, children }: { name: string; identifier: number; children: React.ReactNode }) {
   const i = `showmore-${identifier}`;
 
   return (
@@ -14,7 +12,7 @@ export default function CardModal({ cardData, identifier }: { cardData: ExpCardD
       <dialog id={i} className='modal modal-bottom sm:modal-middle'>
         <div className='modal-box'>
           <h2 className='card-title text-primary bg-neutral-900 rounded-xl p-2 justify-center'>{name}</h2>
-          {descriptionLong}
+          {children}
           <div className='modal-action'>
             <form method='dialog'>
               <button className='btn'>Close</button>

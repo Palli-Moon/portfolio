@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Text fields named `body`/`description` hold Markdown.
+
+/// A block of prose, grouped by the page section it belongs to.
+model Paragraph {
+  id      Int     @id @default(autoincrement())
+  section Section
+  order   Int
+  body    String
+
+  @@index([section, order])
+}
+
+enum Section {
+  BIO // Always visible biography
+  BIO_MORE // Biography text inside the "more info" collapse
+  PROJECTS // Intro text above the project cards
+}
+
+model Skill {
+  id       Int           @id @default(autoincrement())
+  title    String
+  level    SkillLevel
+  category SkillCategory
+  order    Int
+
+  @@unique([category, title])
+}
+
+enum SkillLevel {
+  EXCELLENT
+  GOOD
+  DECENT
+}
+
+enum SkillCategory {
+  PROGRAMMING
+  FRAMEWORKS
+  TOOLS
+  LANGUAGES
+}
+
+/// A job or a degree; both render as experience cards.
+model Experience {
+  id              Int            @id @default(autoincrement())
+  kind            ExperienceKind
+  name            String
+  title           String?
+  startDate       DateTime       @db.Date
+  endDate         DateTime?      @db.Date
+  tags            String[]
+  description     String
+  descriptionLong String?
+
+  @@index([kind, startDate])
+}
+
+enum ExperienceKind {
+  WORK
+  EDUCATION
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  name        String
+  link        String?
+  ghlink      String
+  tags        String[]
+  description String
+  order       Int
+}

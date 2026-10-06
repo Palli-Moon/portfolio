@@ -5,6 +5,9 @@ import Experience from '@/components/cards/experience';
 import Education from '@/components/cards/education';
 import Projects from '@/components/projects';
 
+// Content comes from the database; re-render at most once an hour so edits show up without a redeploy.
+export const revalidate = 3600;
+
 export default function Home() {
   return (
     <main>
