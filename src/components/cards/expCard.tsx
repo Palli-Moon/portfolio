@@ -17,7 +17,7 @@ export default function ExpCard({ cardData, identifier, onlyYear }: { cardData: 
         </p>
       </div>
       <div>{description}</div>
-      <div className='card-actions justify-between'>
+      <div className='card-actions justify-between mt-auto'>
         <div className='my-auto'>{languages && <SkillBadge skills={languages} />}</div>
         <div>{descriptionLong && <CardModal cardData={cardData} identifier={identifier} />}</div>
       </div>

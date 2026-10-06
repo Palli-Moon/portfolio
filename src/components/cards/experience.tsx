@@ -5,7 +5,7 @@ import Content from '../content';
 export default function Experience() {
   return (
     <Content title='Experience'>
-      <Cards cardData={experience} />
+      <Cards cardData={experience} twoColumns />
     </Content>
   );
 }
